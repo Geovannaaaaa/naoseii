@@ -12,6 +12,24 @@ body {
     margin: 0;
 }
 
+/* Botão de música */
+#btnMusica{
+    background: #143a16;
+    color:#e8e2d6;
+    border:2px solid #2f7d32;
+    padding:6px 12px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:13px;
+    transition:.3s;
+}
+
+#btnMusica:hover{
+    background:#2f7d32;
+    color:white;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.6);
+}
+
 /* HEADER */
 header {
     background-color: green;
