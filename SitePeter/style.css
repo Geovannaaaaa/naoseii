@@ -1,0 +1,561 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display';
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: green;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 7px rgba(0,0,0, 0.3);
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'UnifrakturCook';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo:hover {
+    color: #000000;
+    text-shadow:
+        0 0 5px rgb(57, 57, 57),
+        0 0 10px #000000,
+        0 0 20px #000000;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    font-size: large;
+    color: #000000;
+    text-shadow:
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px #000000,
+        0 0 20px #000000;
+}
+
+/* HERO */
+.hero{
+    background:
+    linear-gradient(
+        rgba(44, 24, 26, 0.7),
+        rgba(44, 24, 16, 0.3)
+    ),
+    url(FotosPeter/petrererererer.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.btn_primary {
+    background-color: green;
+    font-family: 'Playfair Display';
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: scale 0.5s;
+}
+.btn_primary:hover {
+    background-color: rgb(0, 78, 0);
+    scale: 0.9;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.6);
+}
+
+/* PRINCIPAL */
+main {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* VINHOS - PRODUTOS */
+.vinhos {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px;
+    background-color: #111;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+    background-color: #111;
+}
+.vinhos h2 {
+    font-family: 'UnifrakturCook';
+    color: #ffffff;
+    text-shadow:
+        0 0 10px rgb(12, 104, 0),
+        0 0 10px #00580d,
+        0 0 20px #005508;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1b1b1b;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 112, 30);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+
+}
+.card h3 {
+    margin-top: 15px;
+    color: #b3003c;
+}
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 84, 32);
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ASIDE VERTICAL */
+.anuncio-horizontal {
+    background-color: #005c0c;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #015f14;
+    float: right;
+    width: 30%;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+.anuncio-horizontal img {
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: block;
+    margin: 10px auto;
+    transition: 0.3s;
+}
+.anuncio-horizontal img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.anuncio-horizontal h3 {
+    background-color: #005c0c;
+}
+.anuncio-horizontal hr {
+    background-color: #015f14;
+}
+.anuncio-horizontal a {
+    color: #000000;
+}
+
+/* ANUNCIOS HORIZONTAL */
+.area-anuncios{
+    width:100%;
+    padding:50px 0;
+    text-align:center;
+}
+
+.anuncios{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.anuncio-vertical {
+    width:80%;
+    max-width:900px;
+    border-radius:15px;
+    overflow:hidden;
+    transition: 0.4s;
+}
+.anuncio-vertical:hover {
+    transform:scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 64, 16);
+}
+
+.anuncio-vertical img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 4rem 0;
+    background-color: #111;
+}
+.sobre-flex {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.sobre-img {
+    flex: 1;
+    margin: 20px;
+    transition:0.4s;
+}
+.sobre-img:hover {
+    transform:scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 92, 8);
+}
+.sobre-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.sobre-txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px;
+}
+.sobre-txt h2 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px rgb(41, 128, 0),
+    0 0 10px #00ff48,
+    0 0 20px #004e26;
+    font-family:'UnifrakturCook';
+}
+.sobre-txt h4 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px rgb(0, 0, 0),
+    0 0 10px #000000,
+    0 0 20px #000000;
+    font-family:'UnifrakturCook';
+}
+.sobre-txt p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+.sobre-vantagens {
+    list-style-type:"🍷 ";
+    margin-top:1rem;
+    margin-left: 13px;
+}
+
+/* Outros produtos */
+.produtos {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 50px;
+    background-color: #111;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+}
+.produtos h2 {
+    font-family: 'UnifrakturCook';
+    color: #ffffff;
+    text-shadow:
+        0 0 10px rgb(12, 104, 0),
+        0 0 10px #00580d,
+        0 0 20px #005508;
+}
+
+.artigos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.artigo {
+    background-color: #1b1b1b;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+.artigo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 112, 30);
+}
+.artigo img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: contain;
+
+}
+.artigo h3 {
+    margin-top: 15px;
+    color: #b3003c;
+}
+.artigo button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 84, 32);
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Premium */
+.Premium {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 50px;
+    background-color:  #003107;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.premium-flex h2 {
+    background-color: #003107;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'UnifrakturCook';
+    color: #ffffff;
+    text-shadow:
+        0 0 10px rgb(12, 104, 0),
+        0 0 10px #00580d,
+        0 0 20px #005508;
+}
+.premium-flex p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.pacotes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #111;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.pacote {
+    background-color: #1b1b1b;
+    width: 330px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border: 2px solid #0f6d11;
+    transition: all 0.3s ease;
+}
+.pacote:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 112, 30);
+}
+.pacote h3 {
+    margin-top: 15px;
+    color: #b3003c;
+}
+.pacote span {
+    color: #00cb1f;
+}
+.pacote button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 84, 32);
+    color: rgb(0, 0, 0);
+    font-family: 'Playfair Display';
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pacote ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pacote li {
+    align-items: center;
+    /* list-style-type:"🍷"; */
+    margin-top:1rem;
+    margin-left: 13px;
+}
+
+
+/* Depoimentos */
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+.depoimentos-txt {
+    text-align: center;
+    margin-top: 30px;
+    font-family:'UnifrakturCook';
+    color: #ffffff;
+    text-shadow:
+    0 0 5px rgb(0, 87, 13),
+    0 0 10px #006711,
+    0 0 20px #00c62b;
+    font-size: 1.7rem;
+}
+
+.depoimento {
+    margin-top: 5pxpx;
+    background-color: #1b1b1b;
+    padding: 30px;
+    border-left: 5px solid #005b1b;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.depoimento:hover {
+    box-shadow: 0 0 20px rgb(0, 64, 25);
+    transform:scale(1.05);
+}
+
+.depoimento p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.depoimento p::before {
+    content:"❝";
+    color: #005b23;
+    font-size:1.5rem;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.depoimento p::after {
+    content:"❞";
+    color: #005b23;
+    font-size:1.5rem;
+    margin-right:5px;
+    vertical-align:middle;
+}
+
+.depoimento h3 {
+    color: #888;
+}
+.nome-depoimento {
+    font-family:'UnifrakturCook';
+}
+
+.rosa-esquerda {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    opacity: 0.8;
+}
+
+.rosa-direita {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    opacity: 0.8;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #003107;
+    color: rgb(255, 255, 255);
+    padding: 3rem 0 1rem;
+}
+.footer a {
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.footer-section {
+    margin: 2rem;
+    flex: 1;
+    min-width: 200px;
+}
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: #00b52a;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #000000;
+    color: #ffffff;
+}
+
