@@ -12,6 +12,43 @@ body {
     margin: 0;
 }
 
+/* Decoração */
+.blood-esquerdo {
+    position: fixed;
+    top: -20px;
+    left: 0;
+    width: 180px;
+    opacity: 0.7;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.blood-direito {
+    position: fixed;
+    top: -20px;
+    right: 0;
+    width: 180px;
+    opacity: 0.7;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.rosa-esquerda {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    opacity: 0.9;
+}
+
+.rosa-direita {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    opacity: 0.9;
+}
+
 /* Botão de música */
 #btnMusica{
     background: #143a16;
@@ -527,20 +564,65 @@ main {
     font-family:'UnifrakturCook';
 }
 
-.rosa-esquerda {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 180px;
-    opacity: 0.8;
+/* FAQ */
+.faq{
+    padding:100px 8%;
+    background-color: #003107;
 }
 
-.rosa-direita {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 180px;
-    opacity: 0.8;
+.faq-txt{
+    text-align:center;
+    color:white;
+    font-family:'UnifrakturCook';
+    text-shadow:
+    0 0 5px rgb(0, 87, 13),
+    0 0 10px #006711,
+    0 0 20px #00c62b;
+    font-size:1.7rem;
+    margin-bottom:50px;
+}
+
+.faq-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.faq-esquerda{
+    width:55%;
+}
+
+.faq-direita{
+    width:45%;
+}
+
+.faq-direita img{
+    width:100%;
+    border-radius:20px;
+}
+
+.card-faq{
+    background:#181818;
+    color: white;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.card-faq:hover{
+    transform:translateX(10px);
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.card-faq h3{
+    font-size: 1rem;
+    margin-bottom:10px;
+    color:#1b5e20;
+}
+.card-faq p{
+    font-size: 0.9rem;
 }
 
 /* FOOTER */
