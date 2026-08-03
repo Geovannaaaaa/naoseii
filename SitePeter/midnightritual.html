@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Midnight Ritual</title>
-
     <link rel="stylesheet" href="stylepag.css">
 </head>
-
 <body>
+    <!-- Decoração -->
+    <img src="fotosDecoracao/blood.png" class="blood-esquerdo">
+    <img src="fotosDecoracao/blood.png" class="blood-direito">
+    <img src="fotosDecoracao/decoracaoo-removebg-preview.png" class="rosa-esquerda">
+    <img src="fotosDecoracao/decoracaoo-removebg-preview.png" class="rosa-direita">
+
+    <!-- HEADER -->
     <header>
         <div class="container">
         <div class="nav">
@@ -20,157 +23,35 @@
                 <a href="#home">Início</a>
                 <a href="#produtos">Produtos</a>
                 <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
+                <a href="#premium">Premium</a>
+                <button id="btnMusica">🎵 Tocar Música</button>
+                <audio autoplay loop src="musica">
+                     <source src="audios/Type O Negative - Christian Woman (OFFICIAL VIDEO) [HD Remaster] - Roadrunner Records (youtube).mp3" type="audio/mpeg">
+                </audio>
             </nav>
         </div>
       </div>
     </header>
-
-    <section class="pagina-produto">
-
-
-        <!-- LADO ESQUERDO -->
-
-        <div class="lado-esquerdo">
-
-            <section class="produto">
-
-                <div class="produto-imagem">
-
-                    <img src="FotosPeter/vinho001.png" alt="Midnight Ritual">
-
-                </div>
-
-
-                <div class="produto-info">
-
-                    <h1>Midnight Ritual</h1>
-
-                    <p class="descricao">
-                        Um vinho intenso e sofisticado,
-                        criado para noites longas,
-                        conversas profundas e trilhas
-                        sonoras sombrias.
-                    </p>
-
-                    <span class="price">
-                        R$ 189,90
-                    </span>
-
-                    <p class="avaliacao">
-                        ⭐⭐⭐⭐⭐ 4.9
-                    </p>
-
-                    <button class="btn-comprar">
-                        Adquirir
-                    </button>
-
-
-                    <div class="detalhes">
-
-                        <h3>Detalhes:</h3>
-
-                        <p>🍷 Tipo: Tinto Suave</p>
-
-                        <p>🕯️ Origem: Black Veil, Romania</p>
-
-                        <p>🌑 Aroma: Frutas escuras e notas amadeiradas</p>
-
-                        <p>🦇 Harmonização: Noites frias e doom metal</p>
-
+    <main>
+        <div class="container-card">
+            <div class="card">
+                <div class="txt-titulo">
+                    <h3>midnight Ritual</h3>
+                    <p>descrição</p>
+                    <div class="img-card">
+                        <img src="FotosVinhos/vinho001.png" alt="">
                     </div>
-
                 </div>
-
-            </section>
-
-
-            <!-- ARTISTA -->
-
-            <div class="artista">
-
-                <h2>Escolha da Noite</h2>
-
-                <p>
-                    “Um vinho intenso o suficiente para sobreviver
-                    a uma madrugada inteira de doom metal.”
-                </p>
-
-                <h3>
-                    — Raven Steele, vocalista da banda Nocturnal Graves
-                </h3>
-
             </div>
-
         </div>
+    </main>
 
 
-        <!-- ANÚNCIOS -->
 
-        <aside>
 
-            <h3>Anúncios:</h3>
-
-            <br>
-
-            <p>
-                <strong>🍷🖤 BLACK VEIL</strong>
-            </p>
-
-            <img src="FotosPeter/bannerPeter.png" alt="banner">
-
-            <p>
-                Vinhos intensos para noites longas.
-            </p>
-
-            <br>
-
-            <p>
-                Elegância sombria, sabores profundos
-                e rótulos selecionados para quem aprecia
-                o lado mais refinado da madrugada.
-            </p>
-
-            <br>
-
-            <p>🥀 Entre na adega:</p>
-
-            <p>
-                <a href="https://youtu.be/BO9aD4mzSE8?si=z8QhYjSDsyCuPo19">
-                    www.blackveil.com
-                </a>
-            </p>
-
-            <br>
-
-            <hr>
-
-            <br>
-
-            <p>
-                <strong>MORCEGUINHO DO AZAR</strong>
-            </p>
-
-            <img src="FotosPeter/Morceguinho.png" alt="banner">
-
-            <p>
-                GANHE OU PERCA! MORCEGUINHO DO AZAR CHEGOU!
-            </p>
-
-            <br>
-
-            <p>Jogue Agora:</p>
-
-            <p>
-                <a href="#">
-                    www.morceguinhoazar.com
-                </a>
-            </p>
-
-        </aside>
-
-    </section>
-    <hr>
+    <h3 class="frase-final">A Taverna dos Amaldiçoados sempre aguardará seu retorno.</h3>
+         <br>
+         <hr>
     <!-- Footer -->
      <footer class="footer">
         <div class="footer-content">
@@ -194,7 +75,5 @@
         <p><em>2026 - Black No. Wine &copy; Black No. Wine. Todos os direitos reservados. <br> 
         Publicado em Black Veil, capital da noite eterna.</em></p> </div>
      </footer>
-
 </body>
-
 </html>
